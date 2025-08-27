@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-gray-900 font-sans transition-colors">
       <script>
-        console.log("hello");
+        alert("Hello from inline JavaScript!");
       </script>
       <Header />
       <Hero />
