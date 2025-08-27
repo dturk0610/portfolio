@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8">
           <img 
-            src="/src/assets/images/profile.jpg" 
+            src="images/profile.jpg" 
             alt="Professional headshot" 
             className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg"
             data-testid="img-profile"

@@ -45,7 +45,7 @@ export default function Projects() {
       application, likely utilizing React, Bun.js and Electron so that the application could be run just like a regular
       executable on the desktop. Using Python for the modular switching of quantum calculations for the interactions
       between particles.`,
-      image: "/src/assets/images/water_sim.png",
+      image: "./images/water_sim.png",
       technologies: ["Node.js", "Javascript", "C++", "Html"],
       github: "",
       link: ""
@@ -53,7 +53,7 @@ export default function Projects() {
     {
       title: "Touch Analytics",
       description: `Desc.`,
-      image: "/src/assets/images/touch_analytics.png",
+      image: "./images/touch_analytics.png",
       technologies: ["Java", "K-Means ML", "Android App"],
       github: "https://github.com/dturk0610/TouchAnalytics",
       live: "",
@@ -69,10 +69,10 @@ export default function Projects() {
       I managed to see that goal through, giving me a project I am quite proud of, yet I can clearly see it's limitations
       and I plan to rework some of the gaps this 'game' had. Controls are WASD, click and drag to look, E to interact and
       spacebar to throw the axe along its displayed path.`,
-      image: "/src/assets/images/axe_thrower.png",
+      image: "./images/axe_thrower.png",
       technologies: ["Html 5", "Javascript"],
       github: "https://github.com/dturk0610/axe_thrower",
-      live: "/axe_thrower-main/AxeThrower/viewer.html",
+      live: "./axe_thrower-main/AxeThrower/viewer.html",
       embedSize: { width: 1280, height: 720 },
       link: ""
     },
@@ -80,10 +80,10 @@ export default function Projects() {
       title: "HTML Asteroids",
       description: `Made for a project for one of my undergraduate classes, this is an HTML 
       re-creation of the classic arcade game Asteroids. Controls are WASD and spacebar.`,
-      image: "/src/assets/images/asteroids.png",
+      image: "./images/asteroids.png",
       technologies: ["Html 5", "Javascript"],
       github: "https://github.com/dturk0610/asteroids",
-      live: "/asteroids-main/Asteroids/asteroids.html",
+      live: "./asteroids-main/Asteroids/asteroids.html",
       embedSize: { width: 1242, height: 720 },
       link: ""
     },
