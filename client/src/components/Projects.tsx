@@ -31,7 +31,7 @@ export default function Projects() {
       of individuals whom was responsible for understanding and tracking failure rates at that point in the line where
       the visual inspection station was at.`,
       image: <GiMicroscope className="text-8xl mb-2 mx-auto text-green-500" />,
-      technologies: [".NET", "C#", "SQL", "Global Bartender", "Group Policy", "SMTP Notifications"],
+      technologies: [".NET", "C#", "SQL", "Group Policy"],
       github: "",
       link: ""
     },
