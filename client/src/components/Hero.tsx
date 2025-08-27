@@ -33,12 +33,12 @@ export default function Hero() {
             <Mail className="w-4 h-4" />
             Get In Touch
           </button>
-          <button 
+          {/* <button 
             className="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary hover:text-white dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-white transition-colors flex items-center gap-2" 
             data-testid="button-view-work">
             <Eye className="w-4 h-4" />
             View My Work
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
