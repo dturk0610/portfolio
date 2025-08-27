@@ -32,12 +32,12 @@ export default function Header() {
               <SiGithub className="text-xl w-5 h-5" />
             </a>
             <ThemeToggle />
-            <button 
-              className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2" 
+            {/* <button 
+              className="bg-primary text-white px-2 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2" 
               data-testid="button-download-resume">
               <Download className="w-4 h-4" />
               Download Resume
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
