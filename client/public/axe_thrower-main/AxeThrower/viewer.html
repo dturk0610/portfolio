@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="">
+    <title>The "Axe Throwing Simulator"</title>
+    <script type="text/javascript" src="./Common/webgl-utils.js"></script>
+    <script type="text/javascript" src="./Common/initShaders3.js"></script>
+    <script type="text/javascript" src="vector.js"></script>
+    <script type="text/javascript" src="scene.js"></script>
+    <script type="text/javascript" src="camera.js"></script>
+    <script type="text/javascript" src="gameObject.js"></script>
+    <script type="text/javascript" src="obj.js"></script>
+    <script type="text/javascript" src="quaternion.js"></script>
+    <script type="text/javascript" src="matrix.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="lights.js"></script>
+    <script type="text/javascript" src="lineRenderer.js"></script>
+    <script type="text/javascript" src="axethrower.js"></script>
+    <script type="text/javascript" src="diceRoller.js"></script>
+    <script type="text/javascript" src="Objects/chair.js"></script>
+    <script type="text/javascript" src="Objects/icosa.js"></script>
+    <script type="text/javascript" src="Materials/baseMat.js"></script>
+    <script type="text/javascript" src="Materials/baseTextMat.js"></script>
+    <script type="text/javascript" src="Materials/objMat.js"></script>
+    <script type="text/javascript" src="Shaders/baseShader.js"></script>
+    <script type="text/javascript" src="Shaders/baseTextureShader.js"></script>
+    <script type="text/javascript" src="Shaders/lineShader.js"></script>
+    <audio id="backgroundAudio" src="Audio/background.m4a" preload autoplay loop></audio>
+    <audio id="axePickup" src="Audio/axe_pickup.wav"></audio>"
+    <audio id="impact" src="Audio/impact.mp3"></audio>"
+</head>
+
+<body onload="init()" style="overflow: hidden;">
+    <canvas id="gl-canvas" height="720" width="1280"> <!-- I really want this to be 900, 1600 though -->
+    </canvas>
+</body>
+
+</html>

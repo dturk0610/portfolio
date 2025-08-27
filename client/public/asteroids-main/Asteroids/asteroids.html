@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./Common/webgl-utils.js"></script>
+        <script type="text/javascript" src="./Common/initShaders.js"></script>
+        <script type="text/javascript" src="./Common/MV.js"></script>
+        <script type="text/javascript" src="asteroid.js"></script>
+        <script type="text/javascript" src="player.js"></script>
+        <script type="text/javascript" src="bullet.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+        <script type="text/javascript" src="characters.js"></script>
+        <audio id="shootSound" src="./Sounds/shoot.mp3" preload="auto"></audio>
+        <audio id="explodeSound" src="./Sounds/explode.mp3" preload="auto"></audio>
+        <audio id="deathSound" src="./Sounds/death.mp3" preload="auto"></audio>
+
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            attribute vec4 myPosition;
+
+            void main(){
+                gl_PointSize = 1.0;
+                gl_Position = myPosition;
+            }
+        </script>
+
+        <script id="frag-asteroid" type="x-shader/x-fragment">
+            uniform bool destroyed;
+
+            void main(){
+                if (!destroyed)
+                    gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 );
+                else
+                    gl_FragColor = vec4( 0.0, 1.0, 1.0, 1.0 );
+            }
+        </script>
+
+        <script id="frag-player" type="x-shader/x-fragment">
+            void main(){
+                gl_FragColor = vec4( 1.0, 0.0, 1.0, 1.0 );
+            }
+        </script>
+
+        <script id="frag-orange" type="x-shader/x-fragment">
+            void main(){
+                gl_FragColor = vec4( 255.0/255.0, 145.0/255.0, 0.0/255.0, 1.0 );
+            }
+        </script>
+
+        <script id="frag-menu" type="x-shader/x-fragment">
+            uniform bool clicked;
+
+            void main(){
+                if (!clicked)
+                    gl_FragColor = vec4( 1.0, 0.0, 1.0, 1.0 );
+                else
+                    gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 );
+            }
+        </script>
+    </head>
+
+    <body onload="init()" style="overflow: hidden;">
+        <!--
+        <canvas id="gl-canvas" width="2048" height="2048"></canvas>
+        -->
+        <canvas id="asteroids-canvas" width="1242" height="720"></canvas>
+    </body>
+</html>
