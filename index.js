@@ -46,7 +46,8 @@ var vite_config_default = defineConfig({
       strict: true,
       deny: ["**/.*"]
     }
-  }
+  },
+  base: "/portfolio/"
 });
 
 // server/vite.ts
