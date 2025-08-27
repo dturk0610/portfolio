@@ -395,7 +395,7 @@ Error generating stack: `+i.message+`
       on the operators by providing them a quick and easy way to fail the product as well as provide them a uniform and
       consitent formatted label. This system connected to IT systems and could be configured to notify a specific group
       of individuals whom was responsible for understanding and tracking failure rates at that point in the line where
-      the visual inspection station was at.`,image:p.jsx(hg,{className:"text-8xl mb-2 mx-auto text-green-500"}),technologies:[".NET","C#","SQL","Global Bartender","Group Policy","SMTP Notifications"],github:"",link:""},{title:"Water Simulation",description:`The aim of this project was to be able to simulate the interaction of water particles as they 
+      the visual inspection station was at.`,image:p.jsx(hg,{className:"text-8xl mb-2 mx-auto text-green-500"}),technologies:[".NET","C#","SQL","Group Policy"],github:"",link:""},{title:"Water Simulation",description:`The aim of this project was to be able to simulate the interaction of water particles as they 
       shift from a high energy, liquid state, into a low-energy crystalized frozen state. This was a final project
       of which I had the honor of working with Mr. Nematullah Waseem, my peer, for this project. Together we were
       able to achieve a base system that has the potential to become a highly modular chemical and quantam interaction
