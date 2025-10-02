@@ -189,11 +189,6 @@ function drawScene( now ){
 var mouseDown = false;
 var mouseDownPos = new Vector2( 0, 0 ); 
 function tryClick( canvas, event ){
-    if ( audio == null ){
-        audio = document.getElementById("backgroundAudio");
-        audio.play();
-        audio.volume = .1;
-    }
     let rect = canvas.getBoundingClientRect();
     let x = event.clientX - rect.left;
     let y = rect.height - (event.clientY - rect.top);

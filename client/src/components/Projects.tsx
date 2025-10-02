@@ -52,7 +52,13 @@ export default function Projects() {
     },
     {
       title: "Touch Analytics",
-      description: `Desc.`,
+      description: `This was a final project that I had done during my time in my undergrad. This project explored the use 
+      of K-Means squared and profile building of how users interact with their phones for a proof of concept that users can
+      be identified and authenticated with regular use of their phones. While the project itself only was a proof of concept
+      it lays a good foundation of evidence that how a person interacts with their phone is truly unique to them. This has the
+      potential to allow phone companies to integrate a similar service within the OS of a device to build a digital fingerprint
+      of a user and help to prevent un-authorized users from gaining access to their personal or sensitive information. This
+      was made as an Android application and developed using Java.`,
       image: "./images/touch_analytics.png",
       technologies: ["Java", "K-Means ML", "Android App"],
       github: "https://github.com/dturk0610/TouchAnalytics",
@@ -217,52 +223,33 @@ export default function Projects() {
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-sm p-4 mb-2">
                   {(() => {
                     const embed = projects[selectedProject].embedSize;
-                    const containerWidth = 900; // Change if you want a different embed height
-
-                    if (embed) {
-                      const scale = containerWidth / embed.width;
-                      const scaledHeight = embed.height * scale;
-
-                      return (
-                        <div
-                          style={{
-                            width: `${containerWidth}px`,
-                            height: `${scaledHeight}px`,
-                            overflow: 'hidden',
-                            border: "none",
-                            display: "block"
-                          }}
-                        >
-                          <iframe
-                            src={projects[selectedProject].live}
-                            title={`Live demo of ${projects[selectedProject].title}`}
-                            style={{
-                              transform: `scale(${scale})`,
-                              transformOrigin: 'top left',
-                              width: `${embed.width}px`,
-                              height: `${embed.height}px`,
-                              border: 'none',
-                              overflow: "hidden",
-                              display: "block",
-                            }}
-                            allowFullScreen
-                          />
-                        </div>
-                      );
-                    }
-
-                    // Default fallback if embedSize is missing
+                    // Use aspect-ratio for responsive iframe
+                    const aspectRatio = embed ? embed.width / embed.height : 16 / 9;
                     return (
-                      <iframe
-                        src={projects[selectedProject].live}
-                        title={`Live demo of ${projects[selectedProject].title}`}
-                        className="w-full h-full border rounded-lg"
-                        allowFullScreen
+                      <div
                         style={{
-                          overflow: "hidden",
-                          border: "none"
+                          width: '100%',
+                          aspectRatio: `${aspectRatio}`,
+                          maxWidth: embed ? embed.width : 1280,
+                          margin: '0 auto',
+                          background: 'black',
+                          borderRadius: '0.5rem',
+                          overflow: 'hidden',
                         }}
-                      />
+                      >
+                        <iframe
+                          src={projects[selectedProject].live}
+                          title={`Live demo of ${projects[selectedProject].title}`}
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            border: 'none',
+                            display: 'block',
+                            background: 'black',
+                          }}
+                          allowFullScreen
+                        />
+                      </div>
                     );
                   })()}
 
