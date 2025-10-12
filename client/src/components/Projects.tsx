@@ -36,6 +36,22 @@ export default function Projects() {
       link: ""
     },
     {
+      title: "AI Natural Disaster Damage Assessor",
+      description: `During my time at Berkeley, we had the opportunity to work on a project that would utilize
+      AI and Machine Learning to help to assess damage from natural disasters. The goal of this project was to
+      be able to take satellite images of areas that had been affected by a natural disaster, such as a hurricane,
+      earthquake or flood, and be able to quickly and accurately assess the level of damage that had occurred.
+      If used in by fire responders tools like this could help to save lives by allowing for faster response times
+      and more efficient allocation of resources. This project was done in collaboration with a team of other students
+      and was a great learning experience for me. We used Python, PyTorch, Pandas and the xView2 dataset to train our model.
+      For our models we tested out a series of techniques, including Convolutional Neural Networks (CNNs), multiple regresion
+      models, simple Neural Networks and a random forest classifier from data extracted from the images.`,
+      image: "./images/CNN_Final.png",
+      technologies: ["Python", "PyTorch", "Pandas", "Machine Learning", "CNN", "Random Forest", "Neural Networks", "xView2 Dataset"],
+      github: "",
+      link: ""
+    },
+    {
       title: "Water Simulation",
       description: `The aim of this project was to be able to simulate the interaction of water particles as they 
       shift from a high energy, liquid state, into a low-energy crystalized frozen state. This was a final project
@@ -76,7 +92,7 @@ export default function Projects() {
       and I plan to rework some of the gaps this 'game' had. Controls are WASD, click and drag to look, E to interact and
       spacebar to throw the axe along its displayed path.`,
       image: "./images/axe_thrower.png",
-      technologies: ["Html 5", "Javascript"],
+      technologies: ["Html", "Javascript"],
       github: "https://github.com/dturk0610/axe_thrower",
       live: "./axe_thrower-main/AxeThrower/viewer.html",
       embedSize: { width: 1280, height: 720 },
@@ -87,7 +103,7 @@ export default function Projects() {
       description: `Made for a project for one of my undergraduate classes, this is an HTML 
       re-creation of the classic arcade game Asteroids. Controls are WASD and spacebar.`,
       image: "./images/asteroids.png",
-      technologies: ["Html 5", "Javascript"],
+      technologies: ["Html", "Javascript"],
       github: "https://github.com/dturk0610/asteroids",
       live: "./asteroids-main/Asteroids/asteroids.html",
       embedSize: { width: 1242, height: 720 },
@@ -98,7 +114,7 @@ export default function Projects() {
       description: `A basic Html Pacman project I used as a means to introduce a close friend 
       how to program in Javascript.`,
       image: <BsJoystick className="text-8xl mb-2 mx-auto text-yellow-400" />,
-      technologies: ["Html 5", "Javascript"],
+      technologies: ["Html", "Javascript"],
       github: "https://github.com/dturk0610/HTMLPacman/tree/main",
       live: "",
       link: ""
@@ -109,14 +125,14 @@ export default function Projects() {
     const colors: { [key: string]: string } = {
       'React': 'bg-blue-100 text-blue-800',
       'Node.js': 'bg-green-100 text-green-800',
-      'MongoDB': 'bg-purple-100 text-purple-800',
-      'Stripe': 'bg-orange-100 text-orange-800',
-      'Vue.js': 'bg-green-100 text-green-800',
-      'Firebase': 'bg-orange-100 text-orange-800',
-      'Vuetify': 'bg-blue-100 text-blue-800',
-      'Chart.js': 'bg-yellow-100 text-yellow-800',
-      'API Integration': 'bg-green-100 text-green-800',
-      'Socket.io': 'bg-green-100 text-green-800',
+      'Python': 'bg-purple-100 text-purple-800',
+      'C#': 'bg-orange-100 text-orange-800',
+      'SQL': 'bg-green-100 text-green-800',
+      'Javascript': 'bg-orange-100 text-orange-800',
+      'C++': 'bg-blue-100 text-blue-800',
+      'Html': 'bg-yellow-100 text-yellow-800',
+      '.NET': 'bg-green-100 text-green-800',
+      'Java': 'bg-green-100 text-green-800',
       'AWS': 'bg-purple-100 text-purple-800'
     };
     return colors[tech] || 'bg-gray-100 text-gray-800';
