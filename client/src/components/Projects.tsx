@@ -67,6 +67,21 @@ export default function Projects() {
       link: ""
     },
     {
+      title: "Cellular Automata Framework",
+      description: `The aim of this project was to create a modular framework for simulating cellular automata.
+      Cellular automata are discrete, abstract computational systems that have found application in various scientific
+      fields, including physics, biology, and computer science. This project was done in collaboration with a couple of peers.
+      Together we were able to create a base framework that allows for the easy creation and simulation of various cellular
+      automata models. The project was entierly done in C++ to allow for the best performance possible. We designed and created
+      a simplistic API that allows for easy creation of whatever set of rules the user would like to constrain their automata to.
+      For our sample case usage we decided to create a gas diffusion simulatoin, where we could see how gas would react in a tight
+      container that had a small opening.`,
+      image: "./images/cellular_automata.png",
+      technologies: ["C++", "Python", "API Design"],
+      github: "",
+      link: ""
+    },
+    {
       title: "Touch Analytics",
       description: `This was a final project that I had done during my time in my undergrad. This project explored the use 
       of K-Means squared and profile building of how users interact with their phones for a proof of concept that users can
